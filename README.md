@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Bookstore
+
+The Bookstore is a website that allows users to:
+Display a list of books.
+Add a book.
+Remove a selected book.
+
+## Built With
+
+- React and Redux
+- Visual Studio Code
+
+## Getting Started
+
+### To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+Web browser (Google Chrome, Firefox, Safari)
+
+### Setup
+
+Go to the top of the page, press te green button that says "Code", and copy the link. Then you have to go to your console and type
+
+Git clone https://github.com/algerina/bookstore.git
+
+That's all, you are ready to go!
 
 ## Available Scripts
 
@@ -17,17 +44,11 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -39,32 +60,46 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Run tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Javascript linters
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+    npx eslint .
+```
 
-### Code Splitting
+HTML linters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+    npx hint .
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+CSS linters
 
-### Making a Progressive Web App
+```
+    npx stylelint "**/*.{css,scss}"
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
+👤 **Amel Khiri**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- GitHub: [@Algerina](https://github.com/Algerina)
+- LinkedIn: [Amel Khiri](https://linkedin.com/in/amel-khiri-qahwadji-37a550135)
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions, issues, and feature requests are welcome!
 
-### `npm run build` fails to minify
+Feel free to check the [issues page](https://github.com/algerina/bookstore/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
