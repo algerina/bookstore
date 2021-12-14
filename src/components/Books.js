@@ -1,10 +1,11 @@
 import React from 'react';
-import BookForm from 'BookForm';
+import BookForm from './BookForm';
+import Book from './Book';
 
 const Books = () => (
   <div>
     <ul>
-      <div />
+      <Book />
     </ul>
 
     <BookForm />
