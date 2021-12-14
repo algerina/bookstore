@@ -5,8 +5,8 @@ const Navbar = () => (
   <nav>
     <h1>BookStore</h1>
     <ul>
-      <li><Link to="/">Books</Link></li>
-      <li><Link to="/">Categories</Link></li>
+      <li><Link to="/books">Books</Link></li>
+      <li><Link to="/categories">Categories</Link></li>
     </ul>
   </nav>
 );

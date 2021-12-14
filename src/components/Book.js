@@ -1,24 +1,16 @@
-import PropTypes from 'prop-types';
-import { React, PureComponent } from 'react';
+import React from 'react';
 
-class Book extends PureComponent {
-  render() {
-    const { title, author } = this.props;
-    return (
+const Book = (props) => {
+  const { abook } = props;
+  return (
+    <div>
       <div>
-        <div>
-          <span>{title}</span>
-          <span>{author}</span>
-        </div>
-        <button type="button">Remove</button>
+        <span>{abook.title}</span>
+        <span>{abook.author}</span>
       </div>
-    );
-  }
-}
-
-Book.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+      <button type="button">Remove</button>
+    </div>
+  );
 };
 
 export default Book;
