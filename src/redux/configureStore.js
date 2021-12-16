@@ -6,9 +6,9 @@ const reducer = combineReducers({
   booksReducer,
 });
 
-const store = createStore(
+const configureStore = createStore(
   reducer,
   applyMiddleware(logger),
 );
 
-export default store;
+export default configureStore;
