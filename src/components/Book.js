@@ -24,7 +24,7 @@ const Book = (props) => {
         <div>
           <ul>
             <li>Comments</li>
-            <li onClick={() => dispatch(removeBook(id))} aria-hidden="true">Remove</li>
+            <li onClick={() => dispatch(removeBook(id))} aria-hidden="true"><button type="button">Remove</button></li>
             <li>Edit</li>
           </ul>
         </div>
