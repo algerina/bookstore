@@ -7,7 +7,7 @@ const Book = (props) => {
   const dispatch = useDispatch();
   const { singleBook } = props;
   const {
-    id, genre, title, author,
+    id, category, title,
   } = singleBook;
 
   return (
@@ -15,9 +15,9 @@ const Book = (props) => {
       <div>
         <div>
 
-          <span>{genre}</span>
+          <span>{category}</span>
           <h2>{title}</h2>
-          <span>{author}</span>
+          <span>author</span>
 
         </div>
 

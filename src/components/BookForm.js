@@ -6,25 +6,21 @@ import { addBook } from '../redux/books/books';
 
 const BookForm = () => {
   const dispatch = useDispatch();
-  const [newBook, setNewBook] = useState({ title: '', author: '' });
+  const [newBook, setNewBook] = useState({ title: '' });
   const addBookHandler = (e) => {
     setNewBook({ ...newBook, title: e.target.value });
   };
 
-  const addAuthorHandler = (e) => {
-    setNewBook({ ...newBook, author: e.target.value });
-  };
-
   const submitBookToStore = () => {
-    const { title, author } = newBook;
-    if (title.length && author.length) {
+    const { title } = newBook;
+    if (title.length) {
       const newBook = {
-        id: uuid(),
+        item_id: uuid(),
         title,
-        author,
+        category: 'Poetry',
       };
       dispatch(addBook(newBook));
-      setNewBook({ author: '', title: '' });
+      setNewBook({ title: '' });
     } else {
       message.warning('Please enter a value');
     }
@@ -38,11 +34,6 @@ const BookForm = () => {
           placeholder="Title"
           onChange={addBookHandler}
           value={newBook.title}
-        />
-        <input
-          placeholder="Author"
-          onChange={addAuthorHandler}
-          value={newBook.author}
         />
       </form>
 
