@@ -1,12 +1,26 @@
 import React from 'react';
-import Booklist from './BookList';
+import { useSelector } from 'react-redux';
+import Book from './Book';
+import BookForm from './BookForm';
+import Message from './Message';
 
-function Books() {
+const BooksList = () => {
+  const bookList = useSelector((state) => state.booksReducer);
+
   return (
-    <div>
-      <Booklist />
-    </div>
-  );
-}
+    <>
+      <div className="booklistContainer">
 
-export default Books;
+        {bookList.length
+          ? bookList.map((book) => (<Book singleBook={book} key={book.id} />))
+          : <Message />}
+
+        <BookForm />
+
+      </div>
+
+    </>
+
+  );
+};
+export default BooksList;
