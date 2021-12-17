@@ -6,15 +6,17 @@ import Navbar from './components/Navbar';
 import './App.css';
 
 const App = () => (
-  <Router>
-    <Navbar />
-    <div>
-      <Routes>
-        <Route path="/books" element={<Books />} exact />
-        <Route path="/categories" element={<Categories />} exact />
-      </Routes>
-    </div>
-  </Router>
+  <div className="panel-bg">
+    <Router>
+      <Navbar />
+      <div>
+        <Routes>
+          <Route path="/books" element={<Books />} exact />
+          <Route path="/categories" element={<Categories />} exact />
+        </Routes>
+      </div>
+    </Router>
+  </div>
 );
 
 export default App;

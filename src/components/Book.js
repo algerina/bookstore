@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
+import '../App.css';
 
 const Book = (props) => {
   const dispatch = useDispatch();
@@ -11,29 +12,29 @@ const Book = (props) => {
   } = singleBook;
 
   return (
-    <div>
+    <div className="singleBook">
       <div>
         <div>
 
-          <span>{category}</span>
-          <h2>{title}</h2>
-          <span>author</span>
+          <span className="category">{category}</span>
+          <h2 className="title">{title}</h2>
+          <span className="author">author</span>
 
         </div>
 
         <div>
-          <ul>
-            <li>Comments</li>
-            <li onClick={() => dispatch(removeBook(id))} aria-hidden="true"><button type="button">Remove</button></li>
-            <li>Edit</li>
+          <ul className="singleUl">
+            <li className="comment">Comments</li>
+            <li onClick={() => dispatch(removeBook(id))} aria-hidden="true" className="remove">Remove</li>
+            <li className="edit">Edit</li>
           </ul>
         </div>
       </div>
 
-      <div>
+      <div className="progress">
 
         <div>
-          <button type="button"><span>UPDATE PROGRESS</span></button>
+          <button type="button" className="update"><span>UPDATE PROGRESS</span></button>
         </div>
       </div>
     </div>

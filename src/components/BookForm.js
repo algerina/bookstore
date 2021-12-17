@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { message } from 'antd';
 import { v4 as uuid } from 'uuid';
 import { addBook } from '../redux/books/books';
+import '../App.css';
 
 const BookForm = () => {
   const dispatch = useDispatch();
@@ -27,17 +28,19 @@ const BookForm = () => {
   };
 
   return (
-    <div>
+    <div className="formWrapper">
 
-      <form>
+      <form className="form">
+        <h2 className="form-title">Add New Book</h2>
         <input
           placeholder="Title"
           onChange={addBookHandler}
           value={newBook.title}
+          className="input"
         />
       </form>
 
-      <button type="submit" onClick={submitBookToStore}>Add Book</button>
+      <button type="submit" className="addBtn" onClick={submitBookToStore}>Add Book</button>
 
     </div>
 
