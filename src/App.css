@@ -188,7 +188,7 @@
   padding: 24px 0;
   margin-top: 24px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 8fr 3fr 1fr 1fr;
   gap: 4px;
 }
 
@@ -196,20 +196,16 @@
 .form select {
   padding: 12px;
   border: 1px solid lightgray;
-  /* background-color: transparent; */
-  margin-left: 6.25rem;
   background-color: white;
   color: rgb(175, 175, 175);
   width: 70%;
   margin-left: 6rem;
 }
 
-
 .form-title-input {
   width: 80% !important;
   margin-right: 5rem;
 }
-
 
 .form-title {
   grid-column: 1 / span 6;
@@ -231,7 +227,7 @@
   font-weight: bold;
   color: white;
   cursor: pointer;
-  margin-top: 7rem;
+  margin-top: 6.5rem;
   margin-right: 13rem;
   border-color: #0290ff;
 }
