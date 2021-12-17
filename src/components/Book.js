@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Progress } from 'antd';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 import '../App.css';
@@ -31,9 +32,12 @@ const Book = (props) => {
         </div>
       </div>
 
+
       <div className="progress">
 
-        <div>
+        <div className="update-container">
+          <span className="chapter">Current Chapter</span>
+          <span className="chapter">chapter3</span>
           <button type="button" className="update"><span>UPDATE PROGRESS</span></button>
         </div>
       </div>

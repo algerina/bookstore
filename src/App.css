@@ -64,7 +64,21 @@
 .category {
   width: 3.063rem;
   height: 1.125rem;
-  margin: 0 2.438rem 0 0;
+  margin: 0 2.438rem 0 0rem;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.construction {
+  height: 1.125rem;
+  margin: 0 2.438rem 0 8rem;
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
@@ -80,7 +94,7 @@
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -164,6 +178,7 @@
   font-size: 0.813rem;
   font-weight: 300;
   text-align: center;
+  border-color: #0290ff;
 }
 
 .form {
@@ -199,13 +214,14 @@
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: #0290ff;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: bold;
   color: white;
   cursor: pointer;
   margin-top: 5rem;
   margin-right: 13rem;
+  border-color: #0290ff;
 }
 
 .formWrapper {
@@ -216,4 +232,31 @@
   display: flex;
   justify-content: flex-end;
   gap: 5rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.update-container {
+  display: flex;
+flex-direction: column;
+align-items: center;
+margin: -7rem -4rem 0 0;
+}
+
+.chapter {
+  color: #080505;
+  height: 1rem;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  font-weight: bold;
 }

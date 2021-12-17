@@ -30,8 +30,10 @@ body {
   overflow-x: initial;
 }
 
-ul {
-  list-style: none;
+
+ul,
+li {
+  list-style-type: none;
 }
 
 code {
