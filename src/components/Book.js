@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Progress } from 'antd';
 import { useDispatch } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import { removeBook } from '../redux/books/books';
+import 'react-circular-progressbar/dist/styles.css';
 import '../App.css';
 
 const Book = (props) => {
   const dispatch = useDispatch();
+  const percentage = 66;
   const { singleBook } = props;
   const {
     id, category, title,
@@ -31,14 +33,26 @@ const Book = (props) => {
           </ul>
         </div>
       </div>
+      <div className="progress-percent">
 
+        <div className="percent">
+          <div style={{ width: 70, height: 70 }}>
 
-      <div className="progress">
+            <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          </div>
+          <div className="percent-inner">
 
-        <div className="update-container">
-          <span className="chapter">Current Chapter</span>
-          <span className="chapter">chapter3</span>
-          <button type="button" className="update"><span>UPDATE PROGRESS</span></button>
+            <span className="completed">Completed</span>
+          </div>
+        </div>
+
+        <div className="progress">
+
+          <div className="update-container">
+            <span className="chapter">Current Chapter</span>
+            <span className="chapter">chapter3</span>
+            <button type="button" className="update"><span>UPDATE PROGRESS</span></button>
+          </div>
         </div>
       </div>
     </div>
