@@ -244,11 +244,11 @@ a {
 .update-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .chapter {
-  color: #080505;
+  color: #746c6c;
   height: 1rem;
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
@@ -258,6 +258,7 @@ a {
   line-height: normal;
   letter-spacing: 1.9px;
   font-weight: bold;
+  margin-left: 4rem;
 }
 
 .completed {
