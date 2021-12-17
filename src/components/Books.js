@@ -9,15 +9,17 @@ const BooksList = () => {
   const bookList = useSelector((state) => state.booksReducer);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(LoadBooks());
-  }, []);
+    if (bookList === 0) {
+      dispatch(LoadBooks());
+    }
+  }, [bookList]);
 
   return (
     <>
       <div className="booklistContainer">
 
         {bookList.length
-          ? bookList.map((book) => (<Book singleBook={book} key={book.id || book.item_id} />))
+          ? bookList.map((book) => (<Book singleBook={book} key={book.id} />))
           : <Message />}
 
         <BookForm />

@@ -8,6 +8,8 @@ Display a list of books.
 Add a book.
 Remove a selected book.
 
+![screenshot](./screenFinal.JPG)
+
 ## Built With
 
 - React and Redux
@@ -100,6 +102,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone whose code was used.
+- Hat to my coding partners, especially  [Emmy-github-webdev](https://github.com/Emmy-github-webdev) for their valuable help.
 - Inspiration
 - etc
