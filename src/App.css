@@ -66,7 +66,7 @@
 .category {
   width: 3.063rem;
   height: 1.125rem;
-  margin: 0 2.438rem 0 0rem;
+  margin: 0 2.438rem 0 0;
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
@@ -235,7 +235,6 @@
   gap: 5rem;
 }
 
-
 a {
   text-decoration: none;
   color: inherit;
@@ -243,8 +242,8 @@ a {
 
 .update-container {
   display: flex;
-flex-direction: column;
-align-items: center;
+ flex-direction: column;
+ align-items: center;
 }
 
 .chapter {
@@ -267,7 +266,6 @@ align-items: center;
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
-  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
