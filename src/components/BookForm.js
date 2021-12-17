@@ -36,7 +36,11 @@ const BookForm = () => {
           placeholder="Title"
           onChange={addBookHandler}
           value={newBook.title}
-          className="input"
+          className="form-title-input"
+        />
+        <input
+          placeholder="Category"
+          className="form-category-input"
         />
       </form>
 
