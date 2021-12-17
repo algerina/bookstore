@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto+Slab:wght@200;400;600&display=swap");
+
 .App {
   text-align: center;
 }
@@ -65,7 +66,7 @@
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -79,7 +80,7 @@
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab;
+  font-family: Montserrat, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -93,7 +94,7 @@
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -107,7 +108,7 @@
   width: 4.563rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -122,7 +123,7 @@
   width: 1.688rem;
   height: 1.188rem;
   margin: 0.188rem 18.625rem 0.125rem 1.063rem;
-  font-family: RobotoSlab;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -137,7 +138,7 @@
   width: 3.375rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -166,13 +167,13 @@
 }
 
 .form {
-    width: 100%;
-    padding: 24px 0;
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr;
-    gap: 4px;
-  }
+  width: 100%;
+  padding: 24px 0;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  gap: 4px;
+}
 
 .form input,
 .form select {
@@ -182,7 +183,6 @@
   margin-left: 6.25rem;
   color: rgb(175, 175, 175);
 }
-
 
 .form-title {
   grid-column: 1 / span 6;
@@ -199,20 +199,13 @@
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: #0290ff;
-  font-family: RobotoSlab;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   color: white;
   cursor: pointer;
   margin-top: 5rem;
   margin-right: 13rem;
-}
-
-.category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
 }
 
 .formWrapper {
@@ -224,4 +217,3 @@
   justify-content: flex-end;
   gap: 5rem;
 }
-
