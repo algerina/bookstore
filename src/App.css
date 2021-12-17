@@ -166,6 +166,7 @@
 
 .singleUl {
   display: flex;
+  margin: 1rem -2.5rem;
 }
 
 .update {

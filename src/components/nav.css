@@ -3,7 +3,6 @@
 
 .nav1 {
   color: #0290ff;
-  width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
   font-family: Montserrat, sans-serif;
@@ -47,7 +46,7 @@
   color: #080505;
   width: 6.563rem;
   height: 1rem;
-  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  /* margin: 1.125rem 41.5rem 0.688rem 2.563rem; */
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
