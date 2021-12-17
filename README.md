@@ -103,6 +103,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used.
-- Hat to my coding partners, especially - GitHub: [Emmy-github-webdev](https://github.com/Emmy-github-webdev) for their valuable help.
+- Hat to my coding partners, especially  [Emmy-github-webdev](https://github.com/Emmy-github-webdev) for their valuable help.
 - Inspiration
 - etc
